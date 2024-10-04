@@ -352,9 +352,9 @@ class MedicalQueryAssistant:
 # %% Initialize and Launch the Assistant
 
 # Provide the path to your text file or set to None to use the existing database
-text_file_path = "/content/cleaned_docs_output_fixed1.txt"  # Replace with your text file path or set to None
+text_file_path = "cleaned_docs_output_fixed1.txt"  # Replace with your text file path or set to None
 
-assistant = MedicalQueryAssistant()
+assistant = MedicalQueryAssistant(text_path=text_file_path)
 assistant.launch_interface()
 
 
